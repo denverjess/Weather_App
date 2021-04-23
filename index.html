@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <p id="feedback"></p>
+      <div>
+        <h1>Weather<span style="color:rgb(255, 253, 129)">ly</span></h1>
+
+        <form id="inputContainer">
+          <!-- Add label, input, and button HERE -->
+
+          <label for="input"></label>
+          <input type="text" id="input" placeholder="Your city name" required/>
+          <br>
+          <button type="submit" id="submit">Search</button>
+        </form>
+        <div id="weatherContainer">
+          <p id="temp"></p>
+          <p id="icon" src="#" alt=""></p>
+          <p id="weatherDesc"></p>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

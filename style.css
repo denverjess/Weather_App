@@ -1,0 +1,103 @@
+html {
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(217deg, rgba(255, 0, 119, 0.548), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(217, 255, 0, 0.514), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0, 153, 255, 0.699), rgba(0,0,255,0) 70.71%);
+    min-height: 100%;
+}
+
+h1 {
+    
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+
+}
+
+#inputContainer {
+    height: ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 10px 5px;
+    height: 34px;
+    text-align: center;
+    border-color: rgb(243, 225, 243);
+    border-radius: 5%;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #9c62ff;
+    border: 1px solid #e8e8e81e;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .025em;
+    line-height: 1.428571429;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 3px;
+  }
+ 
+#weatherContainer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    border-radius: 4%;
+    display: block;
+    border: 2px solid snow;
+   
+    height: 50vh;
+    width: 25vw;
+    max-width: 400px;
+    min-width: 200px;
+    background: linear-gradient(cyan, pink, rgb(255, 253, 129))
+    
+
+}  
+
+
+
+#temp {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+#weatherDesc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+
+#feedback {
+    margin-top: 0px;
+    padding: 1.5rem;
+    background-color: tomato;
+    color: white;
+    display: none;
+    height: 2rem;
+    width: vw;
+}
+.show {
+    display: block !important
+}
