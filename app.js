@@ -26,19 +26,22 @@ function fetchWeather(event) {
         giveFeedback("Invalid search item")
         return;
     }
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${api}`, {
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Denver&appid=b2bf93dcb80a4720b47f5d646b2e7993`, {
     mode: "cors"
 })
     .then((response) => response.json())
+    
     .then((response) => {
        
         temp.textContent = Math.round (response.main.temp) + "\u00B0F" 
         weatherDesc.textContent = (response.weather[0].main)
-        icon.innerHTML = (response.weather[0].icon)
-            console.log(img)
+        //icon.innerHTML = (response.weather[0].icon)
+    
     }) 
     .catch((error) => {
-       giveFeedback(`No result could be found for "${input.value}"!`)
+       giveFeedback(`No result could be found for "${input.value}" :(`)
     
 
 })};
+
+//`https://api.openweathermap.org/data/2.5/forecast?q=${input.value}&appid=&units=imperial&appid=${api}`
